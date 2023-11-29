@@ -9,9 +9,8 @@ body {
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin:0;
-  padding:0;
+  padding:3;
   border:0;
-  font:inherit;
   vertical-align: baseline;
 } 
 
@@ -61,7 +60,7 @@ body, button, input {
 }
 
 .main {
-  background-color: #fafafa;
+  background-color: #ffffff;
   order: 4;
   flex-grow: 1;
   -webkit-box-flex: 1;
@@ -109,10 +108,10 @@ body, button, input {
 
 .login-box {
   background: #fff;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #dbdbdb;
   border-radius: 1px;
   margin:0 0 10px;
-  padding: 10px 0;
+  padding: 0px 0;
   /* align-items: center; */
 }
 
@@ -122,8 +121,16 @@ body, button, input {
 
 .logo {
   background: cover no-repeat;
-  width:175px;
+  width:185px;
   height:auto;
+  padding: 15px;
+}
+
+.logo-mini{
+  vertical-align:middle;
+  width: 25px; 
+  height: auto;
+  margin-right: 1px;
 }
 
 .form {
@@ -140,7 +147,7 @@ body, button, input {
 
 input {
   height: 36px;
-  border: 1px solid #efefef;
+  border: 1px solid #dbdbdb;
   border-radius: 3px;
   background-color: #fafafa;
   width:100%;
@@ -161,17 +168,24 @@ input#name:focus, input#password:focus {
   position: relative;
   margin: 8px 40px;
 }
+
+.button-box a {
+  color: #385185;
+  font-size: 14;
+  font-weight: 550;
+}
+
 .btn {
   cursor: pointer;
   width: 100%;
   padding:0 8px; 
-  background: #3897f0;
-  border:1px solid #3897f0;
+  background: #4db5f9;
+  border:1px solid #4db5f9;
   color:#fff;
-  border-radius:3px;
+  border-radius:7px;
   font-weight:600;
   font-size: 14px;
-  height: 28px;
+  height: 30px;
   line-height: 26px;
   outline: none;
   white-space: nowrap;
@@ -179,7 +193,6 @@ input#name:focus, input#password:focus {
 
 .forgot, .forgot:active, .forgot:hover, .forgot:visited {
   font-size:12px;
-  margin-top:12px;
   text-align: center;
   color:#003569;
   line-height: 14px!important;
@@ -193,8 +206,9 @@ input#name:focus, input#password:focus {
 }
 
 .text a, .text a:visited, .text a:hover, .text a:active {
-  color:#3897f0;
+  color:#0095f6;
   margin-left:3px;
+  font-weight:600;
 }
 
 /* App Store */
@@ -225,23 +239,23 @@ input#name:focus, input#password:focus {
 
 /* FOOTER */
 .footer {
-  background-color: #fafafa;
   order: 5;
   padding: 0 20px;
-  background: #fafafa;
+}
+
+.footer-logo{
+  text-align: center;
 }
 
 .footer-container {
-  flex-direction: row;  
+  flex-direction:column;  
   flex-wrap:wrap;
-  background-color: #fafafa;
-  justify-content: space-between;
-  padding: 38px 0;
-  max-width:935px;
-  font-size:12px;
-  font-weight:600;
+  justify-content:space-between;
+  padding: 50px 0;
+  max-width:1150px;
+  font-size:11px;
+  font-weight:500;
   margin:0 auto;
-  text-transform:uppercase;
   width:100%
 }
 
@@ -262,13 +276,15 @@ input#name:focus, input#password:focus {
 }
 
 .footer-nav ul li a {
-  color: #003569;
+  color: #737373;
   text-decoration: none;
 }
 
 .footer span {
-  color:#999;
+  color:#737373;
 }
+
+
 
 span.language { 
   color: #003569;
@@ -289,6 +305,33 @@ span.language {
   left:0;
   width: 100%;
 }
+
+.line {
+  margin-top: 10px;
+  position: relative;
+  font-size:11px;
+  font-weight:520;
+  color: #737373;
+}
+
+.line::before,
+.line::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 38%; 
+  border-top: 1.2px solid #dbdbdb;
+  margin: 20 13px;
+}
+
+.line::before {
+  margin-left: 1; 
+}
+
+.line::after {
+  margin-right: 1;
+}
+
 
 /* Media Queries */
 @media (max-width:450px) {
@@ -331,7 +374,7 @@ span.language {
   }
 
   .input-box {
-    border: 1px solid #efefef;
+    border: 1px solid #dbdbdb;
     border-radius: 3px;
     height: 36px;
     background: #fafafa;
