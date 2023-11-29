@@ -11,4 +11,4 @@
 **- You can edit the redirection link by editing it on line 108 in the js part in HTML code.**<br/>
 ![image](https://user-images.githubusercontent.com/81310818/123550314-4d1bb280-d76d-11eb-8ca0-cec48b286461.png)<br>
 
-> **V E N A X**
+>This code originally writed by [VENAX](https://github.com/venaxyt/Instagram-Phishing). I just changed it a little bit.
